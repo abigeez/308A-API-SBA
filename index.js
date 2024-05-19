@@ -25,8 +25,17 @@ async function getDog() {
     document.getElementById("theInput").value;
     let requestBody = {data:dataCatch};
 
-    const response = await axios.post{
-        
+    const result = await axios.post{
+
     }
+
+}
+
+
+const baseUrl = 'https://api.thedogapi.com/v1';
+
+async function searchBreeds(query) {
+    const response = await fetch(`${baseUrl}/breeds/search?q=${query}`);
+    const data = await response.json();
 
 }
