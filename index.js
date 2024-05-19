@@ -37,5 +37,7 @@ const baseUrl = 'https://api.thedogapi.com/v1';
 async function searchBreeds(query) {
     const response = await fetch(`${baseUrl}/breeds/search?q=${query}`);
     const data = await response.json();
-
+    return data;
 }
+
+async function getDogImages(page,limit = 10)

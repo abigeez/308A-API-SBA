@@ -1,0 +1,1 @@
+My name is Abigail Garner and this is my attempt to gather data from an API. For some reason this concept is hard for me to grasp but what I did use was forms to make a way for a user to go throughout the page if the API data were there via axios or fetching technologies. I also used some DOM manipulation to create elements and modify them to my liking.
