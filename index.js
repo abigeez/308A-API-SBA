@@ -5,6 +5,15 @@ const API_KEY = 'live_9rACe49g2hV7l9Q8skb7kGEFeYdCzFlnfJzahqnthE095x3YCq4BituWKt
 import axios from "axios";
 
 const client = axios.create({
-    baseURL:"https://api.thedogapi.com/v1/images/";
+    baseURL:"https://api.thedogapi.com/";
 
 });
+
+function dogCapture () {
+    const getImage = () => {
+        axios.get('https://api.thedogapi.com/v1/images/search')
+    }
+
+    
+
+};
