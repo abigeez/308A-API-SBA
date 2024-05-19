@@ -9,7 +9,7 @@ const client = axios.create({
 
 });
 
-function dogCapture () {
+async function dogCapture () {
     const getImage = () => {
         axios.get('https://api.thedogapi.com/v1/images/search')
     }
@@ -17,3 +17,16 @@ function dogCapture () {
     
 
 };
+
+document.getElementById("myBtn").addEventListener("click",getDog);
+
+async function getDog() {
+    let dataCatch =
+    document.getElementById("theInput").value;
+    let requestBody = {data:dataCatch};
+
+    const response = await axios.post{
+        
+    }
+
+}
